@@ -19,12 +19,12 @@ Create the [Conway's Game of Life](https://en.wikipedia.org/wiki/Conway%27s_Game
 ## How to run?
 Compile using:
 ```
-javac -sourcepath ./src -classpath "./lib/stdlib-package.jar;" -d ./out ./mamadaliev/Run.java
+javac -sourcepath src -classpath lib/stdlib-package.jar -d out src/mamadaliev/Run.java
 ```
 
 Run using:
 ```
-java -sourcepath ./src -classpath "./lib/stdlib-package.jar;" -d ./out mamadaliev.Run
+java -classpath out:lib/stdlib-package.jar mamadaliev.Run
 ```
 <br>
 
