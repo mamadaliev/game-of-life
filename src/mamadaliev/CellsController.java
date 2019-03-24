@@ -48,13 +48,13 @@ class CellsController {
     private int getNeighborsCount(int x, int y) {
         int neighbors = 0;
         if (cells[0][x - 1][y - 1]) neighbors++;
-        if (cells[0][x-1][y]) neighbors++;
-        if (cells[0][x][y-1]) neighbors++;
-        if (cells[0][x][y+1]) neighbors++;
-        if (cells[0][x+1][y]) neighbors++;
-        if (cells[0][x+1][y+1]) neighbors++;
-        if (cells[0][x+1][y-1]) neighbors++;
-        if (cells[0][x-1][y+1]) neighbors++;
+        if (cells[0][x - 1][y]) neighbors++;
+        if (cells[0][x][y - 1]) neighbors++;
+        if (cells[0][x][y + 1]) neighbors++;
+        if (cells[0][x + 1][y]) neighbors++;
+        if (cells[0][x + 1][y + 1]) neighbors++;
+        if (cells[0][x + 1][y - 1]) neighbors++;
+        if (cells[0][x - 1][y + 1]) neighbors++;
         return neighbors;
     }
 
