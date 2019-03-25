@@ -1,7 +1,7 @@
 # Conway's Game of Life
 Version: 0.1<br>
 
-[![License](https://img.shields.io/badge/license-MIT-brightgreen.svg)](https://en.wikipedia.org/wiki/MIT_License)
+[![License](https://img.shields.io/badge/license-MIT-brightgreen.svg)](https://mit-license.org/)
 [![JDK](https://img.shields.io/badge/JDK-%3E%3D%201.8-d36e6e.svg?style=flat-circle)](https://docs.oracle.com/javase/8/docs/)
 <br>
 
@@ -44,3 +44,15 @@ neighbors = (-ထ; 2) ∪ (2; 3) ∪ (3; +ထ) OR neighbors = 2 AND dead cell
 
 ## Demo
 <img src="https://i.ibb.co/S5xhXmG/gol.gif">
+<br>
+
+## Change Log
+A change log for the entire project can be found under [game-of-life/CHANGELOG.md](https://github.com/mamadaliev/game-of-life/blob/master/CHANGELOG.md).
+<br>
+
+## Contribute
+For any problems, comments, or feedback please create an issue [here on GitHub](https://github.com/mamadaliev/game-of-life/issues).
+<br>
+
+## Licence
+Game of Life is released under the [MIT license](https://en.wikipedia.org/wiki/MIT_License).
