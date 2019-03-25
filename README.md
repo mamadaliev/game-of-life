@@ -17,6 +17,11 @@ Create the [Conway's Game of Life](https://en.wikipedia.org/wiki/Conway%27s_Game
 <br>
 
 ## How to run?
+1. Run ``compile.sh`` to compile and run ``run.sh`` to run.
+
+2. With CLI.
+<br>
+
 Compile using:
 ```
 javac -sourcepath src -classpath lib/stdlib-package.jar -d out src/mamadaliev/Run.java
@@ -35,7 +40,7 @@ neighbors = 3 OR neighbors = 2 and life cell
 <b>Dead:</b>
 neighbors = (-ထ; 2) ∪ (2; 3) ∪ (3; +ထ) OR neighbors = 2 AND dead cell
 <br>
+<br>
 
 ## Demo
 <img src="https://i.ibb.co/S5xhXmG/gol.gif">
-<br>
