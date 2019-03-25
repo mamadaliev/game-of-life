@@ -12,7 +12,7 @@ Version: 0.1<br>
 <br>
 
 ## Task
-Create the [Conway's Game of Life](https://en.wikipedia.org/wiki/Conway%27s_Game_of_Life) application with the [stdDraw library](https://introcs.cs.princeton.edu/java/stdlib/).
+Create the [Conway's Game of Life](https://en.wikipedia.org/wiki/Conway%27s_Game_of_Life) application with the [stdlib](https://introcs.cs.princeton.edu/java/stdlib/) library.
 <br>
 <br>
 
@@ -34,8 +34,7 @@ neighbors = 3 OR neighbors = 2 and life cell
 
 <b>Dead:</b>
 neighbors = (-ထ; 2) ∪ (2; 3) ∪ (3; +ထ) OR neighbors = 2 AND dead cell
-
-<img src="https://i.ibb.co/vZ3HKcM/grid.png" width="100">
+<br>
 
 ## Demo
 <img src="https://i.ibb.co/S5xhXmG/gol.gif">
