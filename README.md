@@ -17,17 +17,21 @@ Create the [Conway's Game of Life](https://en.wikipedia.org/wiki/Conway%27s_Game
 <br>
 
 ## How to run?
-1. Run ``compile.sh`` to compile and run ``run.sh`` to run.
+<b>1. With files:</b>
 
-2. With CLI.
+Run ``compile.sh`` to compile and run ``run.sh`` to run.
+<br>
 <br>
 
-Compile using:
+<b>2. With CLI:</b>
+<br>
+
+Compile using
 ```
 javac -sourcepath src -classpath lib/stdlib-package.jar -d out src/mamadaliev/Run.java
 ```
 
-Run using:
+Run using
 ```
 java -classpath out:lib/stdlib-package.jar mamadaliev.Run
 ```
@@ -35,7 +39,7 @@ java -classpath out:lib/stdlib-package.jar mamadaliev.Run
 
 ## Algorithm
 <b>Life:</b>
-neighbors = 3 OR neighbors = 2 and life cell
+neighbors = 3 OR neighbors = 2 AND life cell
 
 <b>Dead:</b>
 neighbors = (-ထ; 2) ∪ (2; 3) ∪ (3; +ထ) OR neighbors = 2 AND dead cell
@@ -47,7 +51,7 @@ neighbors = (-ထ; 2) ∪ (2; 3) ∪ (3; +ထ) OR neighbors = 2 AND dead cell
 <br>
 
 ## Change Log
-A change log for the entire project can be found under [game-of-life/CHANGELOG.md](https://github.com/mamadaliev/game-of-life/blob/master/CHANGELOG.md).
+A change log for the entire project can be found under [CHANGELOG.md](https://github.com/mamadaliev/game-of-life/blob/master/CHANGELOG.md).
 <br>
 
 ## Contribute
