@@ -1,5 +1,5 @@
 # Conway's Game of Life
-Version: 0.1<br>
+Version: 0.2<br>
 
 [![License](https://img.shields.io/badge/license-MIT-brightgreen.svg)](https://mit-license.org/)
 [![JDK](https://img.shields.io/badge/JDK-%3E%3D%201.8-d36e6e.svg?style=flat-circle)](https://docs.oracle.com/javase/8/docs/)
@@ -17,9 +17,10 @@ Create the [Conway's Game of Life](https://en.wikipedia.org/wiki/Conway%27s_Game
 <br>
 
 ## How to run?
-<b>1. With files:</b>
+<b>1. With bash/bat files:</b>
 
-Run ``compile.sh`` to compile and run ``run.sh`` to run.
+Run ``compile.sh`` to compile and run ``run.sh`` to run for *nix.<br>
+Run ``compile.bat`` to compile and run ``run.bat`` to run for Windows.
 <br>
 <br>
 
@@ -28,12 +29,12 @@ Run ``compile.sh`` to compile and run ``run.sh`` to run.
 
 Compile using
 ```
-javac -sourcepath src -classpath lib/stdlib-package.jar -d out src/mamadaliev/Run.java
+javac -sourcepath src -classpath lib/stdlib-package.jar -d out src/mamadaliev/GameOfLifeRunner.java
 ```
 
 Run using
 ```
-java -classpath out:lib/stdlib-package.jar mamadaliev.Run
+java -classpath out:lib/stdlib-package.jar mamadaliev.GameOfLifeRunner
 ```
 <br>
 
