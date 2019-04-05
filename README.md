@@ -29,7 +29,7 @@ Run ``compile.bat`` to compile and run ``run.bat`` to run for Windows.
 
 Compile using
 ```
-javac -sourcepath src -classpath lib/stdlib-package.jar -d out src/mamadaliev/GameOfLifeRunner.java
+javac -sourcepath src -classpath lib/stdlib-package.jar -d out src/mamadaliev/GameRunner.java
 ```
 
 Run using
