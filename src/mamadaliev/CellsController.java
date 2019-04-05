@@ -94,6 +94,18 @@ class CellsController {
             if (cells[0][x - 1][0])     neighbors++; // [x-1, y+1]
         }
 
+        // left top cell
+        if (y == height - 1 && x == 0) {
+            if (cells[0][x + 1][y])         neighbors++; // [x+1, y]
+            if (cells[0][x + 1][0])         neighbors++; // [x+1, y+1]
+            if (cells[0][x][0])         neighbors++; // [x,   y+1]
+            if (cells[0][x + 1][y - 1])     neighbors++; // [x+1, y-1]
+            if (cells[0][x][y - 1])     neighbors++; // [x,   y-1]
+            if (cells[0][width - 1][y - 1]) neighbors++; // [x-1, y-1]
+            if (cells[0][width - 1][y])     neighbors++; // [x-1, y]
+            if (cells[0][width - 1][0])     neighbors++; // [x-1, y+1]
+        }
+
         // bottom cells
         if (y == 0 && (x > 0 && x < width - 1)) {
             if (cells[0][x][y + 1])          neighbors++;
