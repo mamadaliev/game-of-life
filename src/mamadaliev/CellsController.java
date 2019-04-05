@@ -60,14 +60,14 @@ class CellsController {
 
         // left bottom cell
         if (y == 0 && x == 0) {
-            if (cells[0][x + 1][y])              neighbors++;
-            if (cells[0][x][y + 1])              neighbors++;
-            if (cells[0][x + 1][y + 1])          neighbors++;
-            if (cells[0][width - 1][y])          neighbors++;
-            if (cells[0][width - 1][y + 1])      neighbors++;
-            if (cells[0][x][height - 1])         neighbors++;
-            if (cells[0][x + 1][height - 1])     neighbors++;
-            if (cells[0][width - 1][height - 1]) neighbors++;
+            if (cells[0][x + 1][y])              neighbors++; // [x+1, y]
+            if (cells[0][x + 1][y + 1])          neighbors++; // [x+1, y+1]
+            if (cells[0][x][y + 1])              neighbors++; // [x,   y+1]
+            if (cells[0][x + 1][height - 1])     neighbors++; // [x+1, y-1]
+            if (cells[0][x][height - 1])         neighbors++; // [x,   y-1]
+            if (cells[0][width - 1][height - 1]) neighbors++; // [x-1, y-1]
+            if (cells[0][width - 1][y])          neighbors++; // [x-1, y]
+            if (cells[0][width - 1][y + 1])      neighbors++; // [x-1, y+1]
         }
 
         // right bottom cell
@@ -98,9 +98,9 @@ class CellsController {
         if (y == height - 1 && x == 0) {
             if (cells[0][x + 1][y])         neighbors++; // [x+1, y]
             if (cells[0][x + 1][0])         neighbors++; // [x+1, y+1]
-            if (cells[0][x][0])         neighbors++; // [x,   y+1]
+            if (cells[0][x][0])             neighbors++; // [x,   y+1]
             if (cells[0][x + 1][y - 1])     neighbors++; // [x+1, y-1]
-            if (cells[0][x][y - 1])     neighbors++; // [x,   y-1]
+            if (cells[0][x][y - 1])         neighbors++; // [x,   y-1]
             if (cells[0][width - 1][y - 1]) neighbors++; // [x-1, y-1]
             if (cells[0][width - 1][y])     neighbors++; // [x-1, y]
             if (cells[0][width - 1][0])     neighbors++; // [x-1, y+1]
@@ -108,38 +108,62 @@ class CellsController {
 
         // bottom cells
         if (y == 0 && (x > 0 && x < width - 1)) {
-            if (cells[0][x][y + 1])          neighbors++;
-            if (cells[0][x + 1][y + 1])      neighbors++;
-            if (cells[0][x + 1][y])          neighbors++;
-            if (cells[0][x - 1][y + 1])      neighbors++;
-            if (cells[0][x - 1][y])          neighbors++;
-            if (cells[0][x - 1][height - 1]) neighbors++;
-            if (cells[0][x][height - 1])     neighbors++;
-            if (cells[0][x + 1][height - 1]) neighbors++;
+            if (cells[0][x + 1][y])          neighbors++; // [x+1, y]
+            if (cells[0][x + 1][y + 1])      neighbors++; // [x+1, y+1]
+            if (cells[0][x][y + 1])          neighbors++; // [x,   y+1]
+            if (cells[0][x + 1][height - 1]) neighbors++; // [x+1, y-1]
+            if (cells[0][x][height - 1])     neighbors++; // [x,   y-1]
+            if (cells[0][x - 1][height - 1]) neighbors++; // [x-1, y-1]
+            if (cells[0][x - 1][y])          neighbors++; // [x-1, y]
+            if (cells[0][x - 1][y + 1])      neighbors++; // [x-1, y+1]
         }
 
         // top cells
         if (y == height - 1 && (x > 0 && x < width - 1)) {
-            if (cells[0][x][y - 1])     neighbors++;
-            if (cells[0][x + 1][y - 1]) neighbors++;
-            if (cells[0][x + 1][y])     neighbors++;
-            if (cells[0][x - 1][y - 1]) neighbors++;
-            if (cells[0][x - 1][y])     neighbors++;
-            if (cells[0][x - 1][0])     neighbors++;
-            if (cells[0][x][0])         neighbors++;
-            if (cells[0][x + 1][0])     neighbors++;
+            if (cells[0][x + 1][y])     neighbors++; // [x+1, y]
+            if (cells[0][x + 1][0])     neighbors++; // [x+1, y+1]
+            if (cells[0][x][0])         neighbors++; // [x,   y+1]
+            if (cells[0][x + 1][y - 1]) neighbors++; // [x+1, y-1]
+            if (cells[0][x][y - 1])     neighbors++; // [x,   y-1]
+            if (cells[0][x - 1][y - 1]) neighbors++; // [x-1, y-1]
+            if (cells[0][x - 1][y])     neighbors++; // [x-1, y]
+            if (cells[0][x - 1][0])     neighbors++; // [x-1, y+1]
+        }
+
+        // left cells
+        if (x == 0 && (y > 1 && y < height - 2)) {
+            if (cells[0][x + 1][y])         neighbors++; // [x+1, y]
+            if (cells[0][x + 1][0])         neighbors++; // [x+1, y+1]
+            if (cells[0][x][y + 1])         neighbors++; // [x,   y+1]
+            if (cells[0][x + 1][y - 1])     neighbors++; // [x+1, y-1]
+            if (cells[0][x][y - 1])         neighbors++; // [x,   y-1]
+            if (cells[0][width - 1][y - 1]) neighbors++; // [x-1, y-1]
+            if (cells[0][width - 1][y])     neighbors++; // [x-1, y]
+            if (cells[0][width - 1][y + 1]) neighbors++; // [x-1, y+1]
+        }
+
+        // right cells
+        if (x == width - 1 && (y > 1 && y < height - 2)) {
+            if (cells[0][0][y])         neighbors++; // [x+1, y]
+            if (cells[0][0][0])         neighbors++; // [x+1, y+1]
+            if (cells[0][x][y + 1])     neighbors++; // [x,   y+1]
+            if (cells[0][0][y - 1])     neighbors++; // [x+1, y-1]
+            if (cells[0][x][y - 1])     neighbors++; // [x,   y-1]
+            if (cells[0][x - 1][y - 1]) neighbors++; // [x-1, y-1]
+            if (cells[0][x - 1][y])     neighbors++; // [x-1, y]
+            if (cells[0][x - 1][y + 1]) neighbors++; // [x-1, y+1]
         }
 
         // other cells
         if ((x > 0 && y > 0) && (x < width - 1 && y < height - 1)) {
-            if (cells[0][x - 1][y - 1]) neighbors++;
-            if (cells[0][x - 1][y])     neighbors++;
-            if (cells[0][x][y - 1])     neighbors++;
-            if (cells[0][x][y + 1])     neighbors++;
-            if (cells[0][x + 1][y])     neighbors++;
-            if (cells[0][x + 1][y + 1]) neighbors++;
-            if (cells[0][x + 1][y - 1]) neighbors++;
-            if (cells[0][x - 1][y + 1]) neighbors++;
+            if (cells[0][x + 1][y])     neighbors++; // [x+1, y]
+            if (cells[0][x + 1][y + 1]) neighbors++; // [x+1, y+1]
+            if (cells[0][x][y + 1])     neighbors++; // [x,   y+1]
+            if (cells[0][x + 1][y - 1]) neighbors++; // [x+1, y-1]
+            if (cells[0][x][y - 1])     neighbors++; // [x,   y-1]
+            if (cells[0][x - 1][y - 1]) neighbors++; // [x-1, y-1]
+            if (cells[0][x - 1][y])     neighbors++; // [x-1, y]
+            if (cells[0][x - 1][y + 1]) neighbors++; // [x-1, y+1]
         }
         return neighbors;
     }
