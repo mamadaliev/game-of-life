@@ -34,7 +34,7 @@ javac -sourcepath src -classpath lib/stdlib-package.jar -d out src/mamadaliev/Ga
 
 Run using
 ```
-java -classpath out:lib/stdlib-package.jar mamadaliev.GameOfLifeRunner
+java -classpath out:lib/stdlib-package.jar mamadaliev.GameRunner
 ```
 <br>
 

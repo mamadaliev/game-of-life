@@ -7,7 +7,7 @@ package mamadaliev;
  * @author Sherzod Mamadaliev
  * @version 0.2
  */
-public class GameOfLifeRunner {
+public class GameRunner {
 
     /**
      * Running Conway's Game of Life
