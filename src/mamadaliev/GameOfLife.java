@@ -39,12 +39,22 @@ public class GameOfLife extends Game implements Config {
         StdDraw.setXscale(0, width - 1);
         StdDraw.setYscale(0, height - 1);
 
-        if (row > width) {
+        try {
+            if (row > width) {
+                throw new Exception("A row is more than width");
+            }
+        } catch (Exception e) {
+            System.err.println(e.getMessage());
             row = width;
         }
 
-        if (column > height) {
-            column = height;
+        try {
+            if (column > height) {
+                throw new Exception("A column is more than height");
+            }
+        } catch (Exception e) {
+            System.err.println(e.getMessage());
+            row = width;
         }
 
         this.cells = new boolean[2][width][height]; // 2 x (row * column)
