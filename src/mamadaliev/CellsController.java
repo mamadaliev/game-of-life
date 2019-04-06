@@ -1,16 +1,14 @@
 package mamadaliev;
 
-import java.awt.*;
 import java.util.Random;
-import edu.princeton.cs.introcs.StdDraw;
 
 class CellsController {
     private int width;
     private int height;
-    private int row, column;
-    private boolean[][][] cells;
-    private double radius;
+    private int row;
+    private int column;
     private double percent;
+    private boolean[][][] cells;
 
     /**
      * Constructor with class parameters CellsController
@@ -21,14 +19,13 @@ class CellsController {
      * @param column column length of cells
      * @param radius cell radius
      */
-    CellsController(int width, int height, int row, int column, double radius, double percent) {
+    CellsController(int width, int height, int row, int column, double radius, double percent, boolean[][][] cells) {
         this.width = width;
         this.height = height;
         this.row = row;
         this.column = column;
-        this.radius = radius;
-        this.cells = new boolean[2][width][height]; // 2 x (row * column)
         this.percent = percent;
+        this.cells = cells;
     }
 
     /**
@@ -183,20 +180,6 @@ class CellsController {
 
         for (int i = 0; i < cells[0].length; i++) {
             System.arraycopy(cells[1][i], 0, cells[0][i], 0, cells[0][i].length);
-        }
-    }
-
-    /**
-     * Drawing cells
-     */
-    public void drawCells() {
-        for (int i = 0; i < width; i++) {
-            for (int j = 0; j < height; j++) {
-                if (cells[0][i][j]) {
-                    StdDraw.setPenColor(Color.BLACK);
-                    StdDraw.filledRectangle(i, j, 0.1 * radius, 0.1 * radius);
-                }
-            }
         }
     }
 }
