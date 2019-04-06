@@ -78,7 +78,7 @@ public class GameOfLife extends Game implements Config {
             StdDraw.clear(Color.WHITE);
             long tStart = System.currentTimeMillis();
             drawCells();
-            controller.getNextEpoch();
+            controller.generateEpoch();
             try {
                 Thread.sleep(20);
             } catch (InterruptedException e) {

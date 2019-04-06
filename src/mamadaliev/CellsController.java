@@ -48,7 +48,7 @@ class CellsController {
     }
 
     /**
-     * Checking the neighbors and returning their quantity
+     * Check the neighbors and return their quantity
      * @param x X
      * @param y Y
      */
@@ -166,9 +166,9 @@ class CellsController {
     }
 
     /**
-     * Next epoch generation
+     * generate next epoch
      */
-    public void getNextEpoch() {
+    public void generateEpoch() {
         int neighbors;
 
         for (int x = 0; x < width; x++) {
