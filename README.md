@@ -38,6 +38,10 @@ java -classpath out:lib/stdlib-package.jar mamadaliev.GameRunner
 ```
 <br>
 
+## UML Diagram
+<img src="https://i.ibb.co/t34WZGT/uml.png">
+<br>
+
 ## Algorithm
 <b>Life:</b>
 neighbors = 3 OR neighbors = 2 AND life cell
