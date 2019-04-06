@@ -7,29 +7,21 @@ import edu.princeton.cs.introcs.StdDraw;
 public class GameOfLife extends Game implements Config {
     private int width;
     private int height;
-    private int row;
-    private int column;
     private double radius;
-    private double percent;
     private static int zoomCount;
     private boolean zoomZone;
     private boolean[][][] cells;
     private CellsController controller;
 
-    // Static initializer block
     static {
         zoomCount = 0;
         StdDraw.enableDoubleBuffering();
     }
 
-    // Block initializer
     {
         width    = DEFAULT_WINDOW_WIDTH;
         height   = DEFAULT_WINDOW_HEIGHT;
-        row      = DEFAULT_MATRIX_WIDTH;
-        column   = DEFAULT_MATRIX_HEIGHT;
         radius   = DEFAULT_RADIUS;
-        percent  = DEFAULT_PERCENT;
         zoomZone = false;
     }
 
@@ -60,9 +52,7 @@ public class GameOfLife extends Game implements Config {
     }
 
     /**
-     * Game initial
-     *
-     * Calling one time in initial of game
+     * Initialization
      */
     @Override
     public void init() {
@@ -71,8 +61,6 @@ public class GameOfLife extends Game implements Config {
 
     /**
      * Frame update
-     *
-     * Calling in cycle after initialization
      */
     @Override
     public void update() {
@@ -94,7 +82,8 @@ public class GameOfLife extends Game implements Config {
     }
 
     /**
-     * Drawing labels
+     * Draw labels
+     *
      * @param tFrame the difference between initial and current frame
      */
     public void showLabels(long tFrame) {
@@ -113,6 +102,9 @@ public class GameOfLife extends Game implements Config {
         }
     }
 
+    /**
+     * Zoom window
+     */
     public void zoomWindow() {
         if (StdDraw.isKeyPressed(KeyEvent.VK_Z)) {
             zoomZone = true;
@@ -136,7 +128,7 @@ public class GameOfLife extends Game implements Config {
     }
 
     /**
-     * Drawing cells
+     * Draw cells
      */
     public void drawCells() {
         for (int i = 0; i < width - zoomCount; i++) {

@@ -10,7 +10,7 @@ package mamadaliev;
 public class GameRunner {
 
     /**
-     * Running Conway's Game of Life
+     * Run Conway's Game of Life
      *
      * @param args CLI arguments
      */
