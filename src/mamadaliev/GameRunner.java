@@ -15,7 +15,7 @@ public class GameRunner {
      * @param args CLI arguments
      */
     public static void main(String... args) {
-        GameOfLife game = new GameOfLife(1000, 500, 5.0d, 75);
+        GameOfLife game = new GameOfLife(1280, 720, 1000, 500, 5.0d, 75);
         game.init();
         game.update();
     }
