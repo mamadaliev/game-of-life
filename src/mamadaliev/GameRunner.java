@@ -2,7 +2,7 @@ package mamadaliev;
 
 /**
  * Conway's Game of Life
- * March 31, 2019
+ * April 6, 2019
  *
  * @author Sherzod Mamadaliev
  * @version 0.2
