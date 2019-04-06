@@ -1,48 +1,18 @@
 package mamadaliev;
 
-import java.awt.*;
-import java.awt.event.KeyEvent;
-import edu.princeton.cs.introcs.StdDraw;
-
-class Game {
-    private CellsController cellsController;
+public abstract class Game {
 
     /**
-     * Constructor with class parameters Game
+     * Game initial
      *
-     * @param width window width
-     * @param height window height
-     * @param row row length of cells
-     * @param column column length of cells
-     * @param radius cell radius
+     * Calling one time in initial of game
      */
-    Game(int width, int height, int row, int column, double radius) {
-        StdDraw.setCanvasSize(width, height);
-        StdDraw.setXscale(0, width - 1);
-        StdDraw.setYscale(0, height - 1);
-        StdDraw.enableDoubleBuffering();
-        this.cellsController = new CellsController(width, height, row, column, radius);
-    }
+    public abstract void init();
 
     /**
-     * Initialization
+     * Frame update
+     *
+     * Calling in cycle after initialization
      */
-    void init() {
-        cellsController.initValues();
-    }
-
-    /**
-     * Refresh frames
-     */
-    void update() {
-        do {
-            StdDraw.clear(Color.WHITE);
-            long tStart = System.currentTimeMillis();
-            cellsController.drawCells();
-            cellsController.getNextEpoch();
-            long tFrame = System.currentTimeMillis() - tStart;
-            cellsController.showInfo(tFrame);
-            StdDraw.show();
-        } while (!StdDraw.isKeyPressed(KeyEvent.VK_ESCAPE));
-    }
+    public abstract void update();
 }

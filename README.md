@@ -1,5 +1,5 @@
 # Conway's Game of Life
-Version: 0.1<br>
+Version: 0.2<br>
 
 [![License](https://img.shields.io/badge/license-MIT-brightgreen.svg)](https://mit-license.org/)
 [![JDK](https://img.shields.io/badge/JDK-%3E%3D%201.8-d36e6e.svg?style=flat-circle)](https://docs.oracle.com/javase/8/docs/)
@@ -17,37 +17,46 @@ Create the [Conway's Game of Life](https://en.wikipedia.org/wiki/Conway%27s_Game
 <br>
 
 ## How to run?
-1. Run ``compile.sh`` to compile and run ``run.sh`` to run.
+<b>1. With bash/bat files:</b>
 
-2. With CLI.
+Run ``compile.sh`` to compile and run ``run.sh`` to run for *nix.<br>
+Run ``compile.bat`` to compile and run ``run.bat`` to run for Windows.
+<br>
 <br>
 
-Compile using:
+<b>2. With CLI:</b>
+<br>
+
+Compile using
 ```
-javac -sourcepath src -classpath lib/stdlib-package.jar -d out src/mamadaliev/Run.java
+javac -sourcepath src -classpath lib/stdlib-package.jar -d out src/mamadaliev/GameRunner.java
 ```
 
-Run using:
+Run using
 ```
-java -classpath out:lib/stdlib-package.jar mamadaliev.Run
+java -classpath out:lib/stdlib-package.jar mamadaliev.GameRunner
 ```
 <br>
 
 ## Algorithm
 <b>Life:</b>
-neighbors = 3 OR neighbors = 2 and life cell
+neighbors = 3 OR neighbors = 2 AND life cell
 
 <b>Dead:</b>
 neighbors = (-ထ; 2) ∪ (2; 3) ∪ (3; +ထ) OR neighbors = 2 AND dead cell
 <br>
 <br>
 
+## UML Diagram
+<img width="320" src="https://i.ibb.co/7WdFk25/uml.png">
+<br>
+
 ## Demo
-<img src="https://i.ibb.co/S5xhXmG/gol.gif">
+<img src="https://i.ibb.co/xXjp5dV/demo.gif">
 <br>
 
 ## Change Log
-A change log for the entire project can be found under [game-of-life/CHANGELOG.md](https://github.com/mamadaliev/game-of-life/blob/master/CHANGELOG.md).
+A change log for the entire project can be found under [CHANGELOG.md](https://github.com/mamadaliev/game-of-life/blob/master/CHANGELOG.md).
 <br>
 
 ## Contribute
