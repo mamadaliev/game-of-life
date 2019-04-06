@@ -8,21 +8,21 @@ public class GameOfLife extends Game implements Config {
     private int width;
     private int height;
     private double radius;
-    private static int zoomCount;
+    private int zoomCount;
     private boolean zoomZone;
     private boolean[][][] cells;
     private CellsController controller;
 
     static {
-        zoomCount = 0;
         StdDraw.enableDoubleBuffering();
     }
 
     {
-        width    = DEFAULT_WINDOW_WIDTH;
-        height   = DEFAULT_WINDOW_HEIGHT;
-        radius   = DEFAULT_RADIUS;
-        zoomZone = false;
+        width     = DEFAULT_WINDOW_WIDTH;
+        height    = DEFAULT_WINDOW_HEIGHT;
+        radius    = DEFAULT_RADIUS;
+        zoomCount = 0;
+        zoomZone  = false;
     }
 
     /**
