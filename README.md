@@ -38,10 +38,6 @@ java -classpath out:lib/stdlib-package.jar mamadaliev.GameRunner
 ```
 <br>
 
-## UML Diagram
-<img src="https://i.ibb.co/t34WZGT/uml.png">
-<br>
-
 ## Algorithm
 <b>Life:</b>
 neighbors = 3 OR neighbors = 2 AND life cell
@@ -49,6 +45,10 @@ neighbors = 3 OR neighbors = 2 AND life cell
 <b>Dead:</b>
 neighbors = (-ထ; 2) ∪ (2; 3) ∪ (3; +ထ) OR neighbors = 2 AND dead cell
 <br>
+<br>
+
+## UML Diagram
+<img width="320" src="https://i.ibb.co/7WdFk25/uml.png">
 <br>
 
 ## Demo
