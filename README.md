@@ -52,7 +52,7 @@ neighbors = (-ထ; 2) ∪ (2; 3) ∪ (3; +ထ) OR neighbors = 2 AND dead cell
 <br>
 
 ## Demo
-<img src="https://i.ibb.co/S5xhXmG/gol.gif">
+<img src="https://i.ibb.co/xXjp5dV/demo.gif">
 <br>
 
 ## Change Log
