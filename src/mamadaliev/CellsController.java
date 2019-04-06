@@ -166,7 +166,7 @@ class CellsController {
     }
 
     /**
-     * generate next epoch
+     * Generate next epoch
      */
     public void generateEpoch() {
         int neighbors;
