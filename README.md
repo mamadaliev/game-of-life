@@ -1,5 +1,5 @@
 # Conway's Game of Life
-Version: 0.2<br>
+0.3<br>
 
 [![License](https://img.shields.io/badge/license-MIT-brightgreen.svg)](https://mit-license.org/)
 [![JDK](https://img.shields.io/badge/JDK-%3E%3D%201.8-d36e6e.svg?style=flat-circle)](https://docs.oracle.com/javase/8/docs/)
@@ -40,10 +40,10 @@ java -classpath out:lib/stdlib-package.jar mamadaliev.GameRunner
 
 ## Algorithm
 <b>Life:</b>
-neighbors = 3 OR neighbors = 2 AND life cell
+neighbors = 3 OR neighbors = 2 AND life cell.
 
 <b>Dead:</b>
-neighbors = (-ထ; 2) ∪ (2; 3) ∪ (3; +ထ) OR neighbors = 2 AND dead cell
+neighbors = (-ထ; 2) ∪ (2; 3) ∪ (3; +ထ) OR neighbors = 2 AND dead cell.
 <br>
 <br>
 
@@ -64,4 +64,4 @@ For any problems, comments, or feedback please create an issue [here on GitHub](
 <br>
 
 ## Licence
-Game of Life is released under the [MIT license](https://en.wikipedia.org/wiki/MIT_License).
+Game of Life is released under the [Unlicense](http://unlicense.org/).
