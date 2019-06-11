@@ -1,8 +1,9 @@
 # Conway's Game of Life
-0.3<br>
+**0.3**<br>
 
-[![License](https://img.shields.io/badge/license-MIT-brightgreen.svg)](https://mit-license.org/)
-[![JDK](https://img.shields.io/badge/JDK-%3E%3D%201.8-d36e6e.svg?style=flat-circle)](https://docs.oracle.com/javase/8/docs/)
+[![License](https://img.shields.io/badge/license-Unlicense-brightgreen.svg)](https://unlicense.org/)
+[![JDK](https://img.shields.io/badge/JDK-%3E%3D%201.7-d36e6e.svg?style=flat-circle)](https://docs.oracle.com/javase/8/docs/)
+[![Join the chat](https://badges.gitter.im/conways-game-of-life.svg)](https://gitter.im/conways-game-of-life/community)
 <br>
 
 1. [Task](#task)
