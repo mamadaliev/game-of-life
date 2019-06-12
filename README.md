@@ -1,5 +1,5 @@
 # Conway's Game of Life
-**0.3**<br>
+**v.0.3**<br>
 
 [![License](https://img.shields.io/badge/license-Unlicense-brightgreen.svg)](https://unlicense.org/)
 [![JDK](https://img.shields.io/badge/JDK-%3E%3D%201.7-d36e6e.svg?style=flat-circle)](https://docs.oracle.com/javase/8/docs/)
