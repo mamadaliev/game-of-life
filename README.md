@@ -3,7 +3,7 @@
 
 [![License](https://img.shields.io/badge/license-Unlicense-brightgreen.svg)](https://unlicense.org/)
 [![JDK](https://img.shields.io/badge/JDK-%3E%3D%201.7-d36e6e.svg?style=flat-circle)](https://docs.oracle.com/javase/8/docs/)
-[![Join the chat](https://badges.gitter.im/conways-game-of-life.svg)](https://gitter.im/conways-game-of-life/community)
+[![Gitter](https://badges.gitter.im/conways-game-of-life/community.svg)](https://gitter.im/conways-game-of-life/community?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge)
 <br>
 
 1. [Task](#task)
