@@ -1,9 +1,9 @@
-package mamadaliev.service.impl;
+package mamadaliev.sevice.deprecated.impl;
 
 import mamadaliev.model.Cell;
-import mamadaliev.service.Game;
-import mamadaliev.service.Life;
-import mamadaliev.service.Transfer;
+import mamadaliev.sevice.deprecated.Game;
+import mamadaliev.sevice.deprecated.Life;
+import mamadaliev.sevice.deprecated.Transfer;
 
 import java.io.File;
 import java.io.IOException;
