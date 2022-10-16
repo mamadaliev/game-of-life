@@ -1,4 +1,4 @@
-package mamadaliev.service;
+package mamadaliev.sevice.deprecated;
 
 public interface Game {
 

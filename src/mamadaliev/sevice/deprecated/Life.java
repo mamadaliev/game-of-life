@@ -1,4 +1,4 @@
-package mamadaliev.service;
+package mamadaliev.sevice.deprecated;
 
 import mamadaliev.model.Cell;
 

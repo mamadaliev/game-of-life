@@ -22,7 +22,7 @@ javac -sourcepath src -classpath lib/stdlib-package.jar -d out src/mamadaliev/Ap
 #### Step 3
 Run application.
 ```
-java -classpath out:lib/stdlib-package.jar mamadaliev.App
+java -classpath out:lib/stdlib-package.jar mamadaliev.Main
 ```
 
 ## License
